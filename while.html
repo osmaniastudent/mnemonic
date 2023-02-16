@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-containerall{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+.tric{
+  display: grid;
+  grid-template-columns: auto 20px;
+  grid-gap: 1px;
+  align-items: center;
+}
+.triccon{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+.tex,.triccon1{
+  background: linear-gradient(to top right, #66ffff -14%, #ff00ff 96%);
+  width: fit-content;
+  color: LightSalmon;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  padding: 10px;
+}
+.rigcrs{
+  display: grid;
+  grid-template-columns: 20px;
+  grid-gap: 1px;
+  align-items: center;
+}
+.right{
+  background-size: cover;
+  background-image: url('1.png');
+  width: 20px;
+  height: 20px;
+}
+.cross{
+  background-size: cover;
+  background-image: url('2.png');
+  width: 20px;
+  height: 20px;
+}
+.wordsdiv{
+min-width: 33px;
+}
+.key{
+ background-size: cover;
+ background-image: url('key.png');
+ height: 33px;
+ width: 33px;
+}
+.lock{
+ background-size: cover;
+ background-image: url('lock.png');
+ height: 33px;
+ width: 33px;
+}
+.cut{
+ background-size: cover;
+ background-image: url('cut.png');
+ height: 33px;
+ width: 33px;
+}
+.submit{
+ background-size: cover;
+ background-color: red;
+ height: 33px;
+ width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="flex-containerall" style="background-color: #ff8d1e;row-gap: 20px;">
+
+<div class="grid-container">
+<input type="text" id="wr1" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,1)"></button>
+<button class="lock" onclick="do(2,1)"></button>
+<button class="cut" onclick="document.getElementById('wr1').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr2" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,2)"></button>
+<button class="lock" onclick="do(2,2)"></button>
+<button class="cut" onclick="document.getElementById('wr2').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr3" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,3)"></button>
+<button class="lock" onclick="do(2,3)"></button>
+<button class="cut" onclick="document.getElementById('wr3').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr4" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,4)"></button>
+<button class="lock" onclick="do(2,4)"></button>
+<button class="cut" onclick="document.getElementById('wr4').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr5" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,5)"></button>
+<button class="lock" onclick="do(2,5)"></button>
+<button class="cut" onclick="document.getElementById('wr5').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr6" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,6)"></button>
+<button class="lock" onclick="do(2,6)"></button>
+<button class="cut" onclick="document.getElementById('wr6').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr7" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,7)"></button>
+<button class="lock" onclick="do(2,7)"></button>
+<button class="cut" onclick="document.getElementById('wr7').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr8" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,8)"></button>
+<button class="lock" onclick="do(2,8)"></button>
+<button class="cut" onclick="document.getElementById('wr8').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr9" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,9)"></button>
+<button class="lock" onclick="do(2,9)"></button>
+<button class="cut" onclick="document.getElementById('wr9').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr10" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,10)"></button>
+<button class="lock" onclick="do(2,10)"></button>
+<button class="cut" onclick="document.getElementById('wr10').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr11" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,11)"></button>
+<button class="lock" onclick="do(2,11)"></button>
+<button class="cut" onclick="document.getElementById('wr11').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr12" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,12)"></button>
+<button class="lock" onclick="do(2,12)"></button>
+<button class="cut" onclick="document.getElementById('wr12').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr13" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,13)"></button>
+<button class="lock" onclick="do(2,13)"></button>
+<button class="cut" onclick="document.getElementById('wr13').value = '';"></button>
+</div>
+
+<div class="grid-container">
+<input type="text" id="wr14" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,14)"></button>
+<button class="lock" onclick="do(2,14)"></button>
+<button class="cut" onclick="document.getElementById('wr14').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr15" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,15)"></button>
+<button class="lock" onclick="do(2,15)"></button>
+<button class="cut" onclick="document.getElementById('wr15').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr16" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,16)"></button>
+<button class="lock" onclick="do(2,16)"></button>
+<button class="cut" onclick="document.getElementById('wr16').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr17" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,17)"></button>
+<button class="lock" onclick="do(2,17)"></button>
+<button class="cut" onclick="document.getElementById('wr17').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr18" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,18)"></button>
+<button class="lock" onclick="do(2,18)"></button>
+<button class="cut" onclick="document.getElementById('wr18').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr19" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="do(1,19)"></button>
+<button class="lock" onclick="do(2,19)"></button>
+<button class="cut" onclick="document.getElementById('wr19').value = '';"></button>
+</div>
+<div class="grid-container">
+<input type="text" id="wr20" class="wordsdiv" placeholder="type here"></input>
+<button class="key" onclick="var lock20 = 1;"></button>
+<button class="lock" onclick="var lock20 = 2;"></button>
+<button class="cut" onclick="document.getElementById('wr20').value = '';"></button>
+</div>
+</div>
+<div>
+<button class="submit" onclick="start()"></button>
+<button class="submit" onclick="getarray()"></button>
+</div>
+
+<div id="trickscont" class="flex-containerall">
+<div class='triccon'><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div></div>
+</div>
+
+<div id="trirow0" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow1" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow2" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow3" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow4" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow5" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow6" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow7" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow8" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow9" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow10" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow11" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow12" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow13" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow14" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow15" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow16" class="flex-containerall" style="background-color: #f04ff0;"></div>
+<div id="trirow17" class="flex-containerall" style="background-color: #9ef229;"></div>
+<div id="trirow18" class="flex-containerall" style="background-color: Peru;"></div>
+<div id="trirow19" class="flex-containerall" style="background-color: #f04ff0;"></div>
+
+<script src="array20k.js" ></script>
+<script>
+var emp = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+var lock = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+var pin = ["","","","","","","","","","","","","","","","","","","",""];
+console.log(words[19]);
+var smm = 0;
+var rv1 = 0;
+var tv1 = 0;
+var cont1 = 0;
+var cont2 = 0;
+var rowrow = [];
+var res;
+var rem;
+var classvar;
+var div;
+var drawn;
+var divc;
+var divw;
+var t;
+var nowtric = 0;
+var pastase = 0;
+var nsl = [];
+var psl = [];
+var row1 = [];
+var row2 = [];
+var row3 = [];
+var row4 = [];
+var row5 = [];
+var row6 = [];
+var row7 = [];
+var row8 = [];
+var row9 = [];
+var row10 = [];
+var row11 = [];
+var row12 = [];
+var row13 = [];
+var row14 = [];
+var row15 = [];
+var row16 = [];
+var row17 = [];
+var row18 = [];
+var row19 = [];
+var row20 = [];
+var row1o1 = [];
+var row1o2 = [];
+var row1o3 = [];
+var row14 = [];
+var row15 = [];
+var row16 = [];
+var row17 = [];
+var row18 = [];
+var row19 = [];
+var row20 = [];
+var row11 = [];
+var row21 = [];
+var row31 = [];
+var row41 = [];
+var row51 = [];
+var row61 = [];
+var row71 = [];
+var row81 = [];
+var row91 = [];
+var row101 = [];
+var row111 = [];
+var row121 = [];
+var row131 = [];
+var row141 = [];
+var row151 = [];
+var row161 = [];
+var row171 = [];
+var row181 = [];
+var row191 = [];
+var row201 = [];
+var row12 = [];
+var row22 = [];
+var row32 = [];
+var row42 = [];
+var row52 = [];
+var row62 = [];
+var row72 = [];
+var row82 = [];
+var row92 = [];
+var row102 = [];
+var row112 = [];
+var row122 = [];
+var row132 = [];
+var row142 = [];
+var row152 = [];
+var row162 = [];
+var row172 = [];
+var row182 = [];
+var row192 = [];
+var row202 = [];
+var row13 = [];
+var row23 = [];
+var row33 = [];
+var row43 = [];
+var row53 = [];
+var row63 = [];
+var row73 = [];
+var row83 = [];
+var row93 = [];
+var row103 = [];
+var row113 = [];
+var row123 = [];
+var row133 = [];
+var row143 = [];
+var row153 = [];
+var row163 = [];
+var row173 = [];
+var row183 = [];
+var row193 = [];
+var row203 = [];
+function start () {
+var cju = 0;
+while (cju < 20) {
+	var idtcju = "trirow"+cju;
+	var elementcju = document.getElementById(idtcju);
+	var hgeccju = "";
+	elementcju.innerHTML = hgeccju;
+    cju++;
+}
+console.log("start");
+wd1 = document.getElementById('wr1').value;
+wd2 = document.getElementById('wr2').value;
+wd3 = document.getElementById('wr3').value;
+wd4 = document.getElementById('wr4').value;
+wd5 = document.getElementById('wr5').value;
+wd6 = document.getElementById('wr6').value;
+wd7 = document.getElementById('wr7').value;
+wd8 = document.getElementById('wr8').value;
+wd9 = document.getElementById('wr9').value;
+wd10 = document.getElementById('wr10').value;
+wd11 = document.getElementById('wr11').value;
+wd12 = document.getElementById('wr12').value;
+wd13 = document.getElementById('wr13').value;
+wd14 = document.getElementById('wr14').value;
+wd15 = document.getElementById('wr15').value;
+wd16 = document.getElementById('wr16').value;
+wd17 = document.getElementById('wr17').value;
+wd18 = document.getElementById('wr18').value;
+wd19 = document.getElementById('wr19').value;
+wd20 = document.getElementById('wr20').value;
+console.log(wd1);
+console.log(wd3);
+var emp = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+if (wd1 == '') {
+  emp[0] = 2;
+} else if (wd2 == '') {
+  emp[1] = 2;
+} else if (wd3 == '') {
+  emp[2] = 2;
+} else if (wd4 == '') {
+  emp[3] = 2;
+} else if (wd5 == '') {
+  emp[4] = 2;
+} else if (wd6 == '') {
+  emp[5] = 2;
+} else if (wd7 == '') {
+  emp[6] = 2;
+} else if (wd8 == '') {
+  emp[7] = 2;
+} else if (wd9 == '') {
+  emp[8] = 2;
+} else if (wd10 == '') {
+  emp[9] = 2;
+} else if (wd11 == '') {
+  emp[10] = 2;
+} else if (wd12 == '') {
+  emp[11] = 2;
+} else if (wd13 == '') {
+  emp[12] = 2;
+} else if (wd14 == '') {
+  emp[13] = 2;
+} else if (wd15 == '') {
+  emp[14] = 2;
+} else if (wd16 == '') {
+  emp[15] = 2;
+} else if (wd17 == '') {
+  emp[16] = 2;
+} else if (wd18 == '') {
+  emp[17] = 2;
+} else if (wd19 == '') {
+  emp[18] = 2;
+} else if (wd20 == '') {
+  emp[19] = 2;
+}
+var wtf = [["","","","","","","","","","","","","","","","","","","",""],["","","","","","","","","","","","","","","","","","","",""],["","","","","","","","","","","","","","","","","","","",""]];
+wtf[0][0] = wd1.substring(0, 1);
+wtf[1][0] = wd1.substring(0, 2);
+wtf[2][0] = wd1.substring(0, 3);
+wtf[0][1] = wd2.substring(0, 1);
+wtf[1][1] = wd2.substring(0, 2);
+wtf[2][1] = wd2.substring(0, 3);
+wtf[0][2] = wd3.substring(0, 1);
+wtf[1][2] = wd3.substring(0, 2);
+wtf[2][2] = wd3.substring(0, 3);
+wtf[0][3] = wd4.substring(0, 1);
+wtf[1][3] = wd4.substring(0, 2);
+wtf[2][3] = wd4.substring(0, 3);
+wtf[0][4] = wd5.substring(0, 1);
+wtf[1][4] = wd5.substring(0, 2);
+wtf[2][4] = wd5.substring(0, 3);
+wtf[0][5] = wd6.substring(0, 1);
+wtf[1][5] = wd6.substring(0, 2);
+wtf[2][5] = wd6.substring(0, 3);
+wtf[0][6] = wd7.substring(0, 1);
+wtf[1][6] = wd7.substring(0, 2);
+wtf[2][6] = wd7.substring(0, 3);
+wtf[0][7] = wd8.substring(0, 1);
+wtf[1][7] = wd8.substring(0, 2);
+wtf[2][7] = wd8.substring(0, 3);
+wtf[0][8] = wd9.substring(0, 1);
+wtf[1][8] = wd9.substring(0, 2);
+wtf[2][8] = wd9.substring(0, 3);
+wtf[0][9] = wd10.substring(0, 1);
+wtf[1][9] = wd10.substring(0, 2);
+wtf[2][9] = wd10.substring(0, 3);
+wtf[0][10] = wd11.substring(0, 1);
+wtf[1][10] = wd11.substring(0, 2);
+wtf[2][10] = wd11.substring(0, 3);
+wtf[0][11] = wd12.substring(0, 1);
+wtf[1][11] = wd12.substring(0, 2);
+wtf[2][11] = wd12.substring(0, 3);
+wtf[0][12] = wd13.substring(0, 1);
+wtf[1][12] = wd13.substring(0, 2);
+wtf[2][12] = wd13.substring(0, 3);
+wtf[0][13] = wd14.substring(0, 1);
+wtf[1][13] = wd14.substring(0, 2);
+wtf[2][13] = wd14.substring(0, 3);
+wtf[0][14] = wd15.substring(0, 1);
+wtf[1][14] = wd15.substring(0, 2);
+wtf[2][14] = wd15.substring(0, 3);
+wtf[0][15] = wd16.substring(0, 1);
+wtf[1][15] = wd16.substring(0, 2);
+wtf[2][15] = wd16.substring(0, 3);
+wtf[0][16] = wd17.substring(0, 1);
+wtf[1][16] = wd17.substring(0, 2);
+wtf[2][16] = wd17.substring(0, 3);
+wtf[0][17] = wd18.substring(0, 1);
+wtf[1][17] = wd18.substring(0, 2);
+wtf[2][17] = wd18.substring(0, 3);
+wtf[0][18] = wd19.substring(0, 1);
+wtf[1][18] = wd19.substring(0, 2);
+wtf[2][18] = wd19.substring(0, 3);
+wtf[0][19] = wd20.substring(0, 1);
+wtf[1][19] = wd20.substring(0, 2);
+wtf[2][19] = wd20.substring(0, 3);
+console.log(wtf[0][2]);
+console.log(wtf[1][1]);
+console.log(wtf[2][3]);
+var j = 0;
+while (j < 20){
+var rowtemp1 = [];
+var rowtemp2 = [];
+var rowtemp3 = [];
+var i = 0;
+var ole = 0;
+var len = words.length;
+if (emp[j] == 1){
+while (i < len) {
+   var res1 = words[i].substring(0, 1);
+   var res2 = words[i].substring(0, 2);
+   var res3 = words[i].substring(0, 3);
+    if (wtf[2][j] == res3) {
+    rowtemp3.push(words[i]);
+    } else if (wtf[1][j] == res2) {
+    rowtemp2.push(words[i]);
+    } else if (wtf[0][j] == res1 && ole < 101) {
+    rowtemp1.push(words[i]);
+	ole++;
+    }
+    i++;
+}
+}
+var k = j + 1;
+if (k == 1){
+  row1o1 = [];
+  row1o2 = [];
+  row1o3 = [];
+  row1o1 = rowtemp1;
+  row1o2 = rowtemp2;
+  row1o3 = rowtemp3;
+} else if (k == 2){
+  row21 = [];
+  row22 = [];
+  row23 = [];
+  row21 = rowtemp1;
+  row22 = rowtemp2;
+  row23 = rowtemp3;
+} else if (k == 3){
+  row31 = [];
+  row32 = [];
+  row33 = [];
+  row31 = rowtemp1;
+  row32 = rowtemp2;
+  row33 = rowtemp3;
+} else if (k == 4){
+  row41 = [];
+  row42 = [];
+  row43 = [];
+  row41 = rowtemp1;
+  row42 = rowtemp2;
+  row43 = rowtemp3;
+} else if (k == 5){
+  row51 = [];
+  row52 = [];
+  row53 = [];
+  row51 = rowtemp1;
+  row52 = rowtemp2;
+  row53 = rowtemp3;
+} else if (k == 6){
+  row61 = [];
+  row62 = [];
+  row63 = [];
+  row61 = rowtemp1;
+  row62 = rowtemp2;
+  row63 = rowtemp3;
+} else if (k == 7){
+  row71 = [];
+  row72 = [];
+  row73 = [];
+  row71 = rowtemp1;
+  row72 = rowtemp2;
+  row73 = rowtemp3;
+} else if (k == 8){
+  row81 = [];
+  row82 = [];
+  row83 = [];
+  row81 = rowtemp1;
+  row82 = rowtemp2;
+  row83 = rowtemp3;
+} else if (k == 9){
+  row91 = [];
+  row92 = [];
+  row93 = [];
+  row91 = rowtemp1;
+  row92 = rowtemp2;
+  row93 = rowtemp3;
+} else if (k == 10){
+  row101 = [];
+  row102 = [];
+  row103 = [];
+  row101 = rowtemp1;
+  row102 = rowtemp2;
+  row103 = rowtemp3;
+} else if (k == 11){
+  row111 = [];
+  row112 = [];
+  row113 = [];
+  row111 = rowtemp1;
+  row112 = rowtemp2;
+  row113 = rowtemp3;
+} else if (k == 12){
+  row121 = [];
+  row122 = [];
+  row123 = [];
+  row121 = rowtemp1;
+  row122 = rowtemp2;
+  row123 = rowtemp3;
+} else if (k == 13){
+  row131 = [];
+  row132 = [];
+  row133 = [];
+  row131 = rowtemp1;
+  row132 = rowtemp2;
+  row133 = rowtemp3;
+} else if (k == 14){
+  row141 = [];
+  row142 = [];
+  row143 = [];
+  row141 = rowtemp1;
+  row142 = rowtemp2;
+  row143 = rowtemp3;
+} else if (k == 15){
+  row151 = [];
+  row152 = [];
+  row153 = [];
+  row151 = rowtemp1;
+  row152 = rowtemp2;
+  row153 = rowtemp3;
+} else if (k == 16){
+  row161 = [];
+  row162 = [];
+  row163 = [];
+  row161 = rowtemp1;
+  row162 = rowtemp2;
+  row163 = rowtemp3;
+} else if (k == 17){
+  row171 = [];
+  row172 = [];
+  row173 = [];
+  row171 = rowtemp1;
+  row172 = rowtemp2;
+  row173 = rowtemp3;
+} else if (k == 18){
+  row181 = [];
+  row182 = [];
+  row183 = [];
+  row181 = rowtemp1;
+  row182 = rowtemp2;
+  row183 = rowtemp3;
+} else if (k == 19){
+  row191 = [];
+  row192 = [];
+  row193 = [];
+  row191 = rowtemp1;
+  row192 = rowtemp2;
+  row193 = rowtemp3;
+} else if (k == 20){
+  row201 = [];
+  row202 = [];
+  row203 = [];
+  row201 = rowtemp1;
+  row202 = rowtemp2;
+  row203 = rowtemp3;
+}
+j++;
+}
+ligase();
+}
+
+function ligase() {
+    row1 = [];
+	row2 = []; 
+	row3 = []; 
+	row4 = []; 
+	row5 = []; 
+	row6 = []; 
+	row7 = []; 
+	row8 = []; 
+	row9 = []; 
+	row10 = []; 
+	row11 = []; 
+	row12 = []; 
+	row13 = [];
+	row14 = [];
+	row15 = []; 
+	row16 = []; 
+	row17 = []; 
+	row18 = [];
+	row19 = []; 
+	row20 = [];
+	row1 = row1o3.concat(row1o2,row1o1);
+	row2 = row23.concat(row22,row21); 
+	row3 = row33.concat(row32,row31);
+	row4 = row43.concat(row42,row41); 
+	row5 = row53.concat(row52,row51); 
+	row6 = row63.concat(row62,row61); 
+	row7 = row73.concat(row72,row71); 
+	row8 = row83.concat(row82,row81); 
+	row9 = row93.concat(row92,row91); 
+	row10 = row103.concat(row102,row101); 
+	row11 = row113.concat(row112,row111); 
+	row12 = row123.concat(row122,row121); 
+	row13 = row133.concat(row132,row131);
+	row14 = row143.concat(row142,row141);
+	row15 = row153.concat(row152,row151); 
+	row16 = row163.concat(row162,row161); 
+	row17 = row173.concat(row172,row171); 
+	row18 = row183.concat(row182,row181);
+	row19 = row193.concat(row192,row191); 
+	row20 = row203.concat(row202,row201);
+	var rc1 = row1.length;
+	var rc2 = row2.length;
+	var rc3 = row3.length;
+	var rc4 = row4.length;
+	var rc5 = row5.length;
+	var rc6 = row6.length;
+	var rc7 = row7.length;
+	var rc8 = row8.length;
+	var rc9 = row9.length;
+	var rc10 = row10.length;
+	var rc11 = row11.length;
+	var rc12 = row12.length;
+	var rc13 = row13.length;
+	var rc14 = row14.length;
+	var rc15 = row15.length;
+	var rc16 = row16.length;
+	var rc17 = row17.length;
+	var rc18 = row18.length;
+	var rc19 = row19.length;
+	var rc20 = row20.length;
+    var colm = [];
+	colm = row1;
+	var hgec = "";
+	var wp = 0;
+	var elementu = document.getElementById("trirow1");
+	elementu.innerHTML = '';
+	if (rc1) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+0+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc1) {
+	   wp = 0;
+	   colm = [];
+	   colm = row2;
+	   var idt = "trirow"+2;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc2) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+1+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc2) {
+	   wp = 0;
+	   colm = [];
+	   colm = row3;
+	   var idt = "trirow"+3;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc3) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+2+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc3) {
+	   wp = 0;
+	   colm = [];
+	   colm = row4;
+	   var idt = "trirow"+4;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc4) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+3+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc4) {
+	   wp = 0;
+	   colm = [];
+	   colm = row5;
+	   var idt = "trirow"+5;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc5) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+4+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc5) {
+	   wp = 0;
+	   colm = [];
+	   colm = row6;
+	   var idt = "trirow"+6;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc6) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+5+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc6) {
+	   wp = 0;
+	   colm = [];
+	   colm = row7;
+	   var idt = "trirow"+7;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc7) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+6+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc7) {
+	   wp = 0;
+	   colm = [];
+	   colm = row8;
+	   var idt = "trirow"+8;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc8) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+7+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc8) {
+	   wp = 0;
+	   colm = [];
+	   colm = row9;
+	   var idt = "trirow"+9;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc9) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+8+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc9) {
+	   wp = 0;
+	   colm = [];
+	   colm = row10;
+	   var idt = "trirow"+10;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc10) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+9+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc10) {
+	   wp = 0;
+	   colm = [];
+	   colm = row11;
+	   var idt = "trirow"+11;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc11) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+10+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc11) {
+	   wp = 0;
+	   colm = [];
+	   colm = row12;
+	   var idt = "trirow"+12;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc12) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+11+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc12) {
+	   wp = 0;
+	   colm = [];
+	   colm = row13;
+	   var idt = "trirow"+13;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc13) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+12+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc13) {
+	   wp = 0;
+	   colm = [];
+	   colm = row11;
+	   var idt = "trirow"+14;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc14) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+13+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc14) {
+	   wp = 0;
+	   colm = [];
+	   colm = row15;
+	   var idt = "trirow"+15;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc15) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+14+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc15) {
+	   wp = 0;
+	   colm = [];
+	   colm = row16;
+	   var idt = "trirow"+16;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+	if (rc16) {
+	while (1){
+	hgec = "<div class='tric'><div class='tex' whichcol="+15+">"+colm[wp]+"</div><div class='rigcrs'><button class='right' onclick='pastaser(this)'></button><button class='cross' onclick='ri(this)'></button></div></div>";
+	elementu.innerHTML += hgec;
+    wp++;
+	if (wp == rc16) {
+	   wp = 0;
+	   colm = [];
+	   colm = row17;
+	   var idt = "trirow"+17;
+	   elementu = document.getElementById(idt);
+	   elementu.innerHTML = '';
+	   break;
+	}
+    }
+	}
+}
+
+function zero (zerop){
+ var zeroi = zerop;
+ var zerodiv = zeroi.closest(".tric");
+ zerodiv.outerHTML = '';
+}
+function ri(zert) {
+ var zeroi = zert;
+ var zerodiv = zeroi.closest(".tric");
+ var juy = zerodiv.getElementsByClassName("tex")[0].innerHTML;
+ zerodiv.outerHTML = '';
+ var index = words.indexOf(juy);
+  if (index > -1) {
+    words.splice(index, 1);
+  }
+}
+function getarray() {
+var element = document.getElementById("all");
+var len = words.length;
+var lop = 0;
+	var getar = setInterval(function() {
+	var hgec = "words<"+lop+"> = :"+words[lop]+":;<br>";
+	element.innerHTML += hgec;
+    lop++;
+	if (lop == len) {
+      clearInterval(getar);
+	}
+}, 10)
+}
+function pastaser (pastase){
+ var pastase1 = pastase;
+ var pastase2 = pastase1.closest(".tric").getElementsByClassName("tex")[0].innerHTML;
+ var pastase3 = "<div class='triccon1'>"+pastase2+"</div>";
+ var pastase5 = pastase1.closest(".tric").getElementsByClassName("tex")[0].getAttribute("whichcol");
+ var pastase4 = document.getElementsByClassName("triccon")[nowtric].getElementsByClassName("triccon1")[pastase5];
+ pastase4.outerHTML = pastase3;
+}
+function newtrick (){
+ var nowtric = nowtric+1;
+ var newtrick1 = document.getElementById('trickscont');
+ var newtrick2 = "<div class='triccon'><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div><div class='triccon1'></div></div>"
+ newtrick1.innerHTML += newtrick2;
+}
+function removase() {
+	row1 = [];
+	row2 = []; 
+	row3 = []; 
+	row4 = []; 
+	row5 = []; 
+	row6 = []; 
+	row7 = []; 
+	row8 = []; 
+	row9 = []; 
+	row10 = []; 
+	row11 = []; 
+	row12 = []; 
+	row13 = [];
+	row14 = [];
+	row15 = []; 
+	row16 = []; 
+	row17 = []; 
+	row18 = [];
+	row19 = []; 
+	row20 = [];
+    row1o1 = [];
+    row1o2 = [];
+    row1o3 = [];
+    row21 = [];
+    row31 = [];
+    row41 = [];
+    row51 = [];
+    row61 = [];
+    row71 = [];
+    row81 = [];
+    row91 = [];
+    row101 = [];
+    row111 = [];
+    row121 = [];
+    row131 = [];
+    row141 = [];
+    row151 = [];
+    row161 = [];
+    row171 = [];
+    row181 = [];
+    row191 = [];
+    row201 = [];
+    row22 = [];
+    row32 = [];
+    row42 = [];
+    row52 = [];
+    row62 = [];
+    row72 = [];
+    row82 = [];
+    row92 = [];
+    row102 = [];
+    row112 = [];
+    row122 = [];
+    row132 = [];
+    row142 = [];
+    row152 = [];
+    row162 = [];
+    row172 = [];
+    row182 = [];
+    row192 = [];
+    row202 = [];
+    row23 = [];
+    row33 = [];
+    row43 = [];
+    row53 = [];
+    row63 = [];
+    row73 = [];
+    row83 = [];
+    row93 = [];
+    row103 = [];
+    row113 = [];
+    row123 = [];
+    row133 = [];
+    row143 = [];
+    row153 = [];
+    row163 = [];
+    row173 = [];
+    row183 = [];
+    row193 = [];
+    row203 = [];
+}
+
+function rebot () {
+
+}
+
+function make() {
+    console.log("makealso");
+    var psl = [];
+	psl = row1;
+    row = 2;
+	var smm = 0;
+    while(row < 21) {
+	if (emp[row-1] == 1) {
+	var tempv = "";
+	var tv1 = 0;
+	var rv1 = 0;
+	var rowrow = [];
+	cont1 = psl.length;
+	if (row == 2) {
+		cont2 = row2.length;
+		rowrow = row2;
+    }else if (row == 3) {
+		cont2 = row3.length;
+		rowrow = row3;
+    }else if (row == 4) {
+		cont2 = row4.length;
+        rowrow = row4;
+    }else if (row == 5) {
+		cont2 = row5.length;
+		rowrow = row5;
+    }else if (row == 6) {
+		cont2 = row6.length;
+		rowrow = row6;
+    }else if (row == 7) {
+		cont2 = row7.length;
+		rowrow = row7;
+    }else if (row == 8) {
+		cont2 = row8.length;
+		rowrow = row8;
+    }else if (row == 9) {
+		cont2 = row9.length;
+		rowrow = row9;
+    }else if (row == 10) {
+		cont2 = row10.length;
+		rowrow = row10;
+    }else if (row == 11) {
+		cont2 = row1o1.length;
+		rowrow = row1o1;
+    }else if (row == 12) {
+		cont2 = row1o2.length;
+		rowrow = row1o2;
+    }else if (row == 13) {
+		cont2 = row1o3.length;
+		rowrow = row1o3;
+    }else if (row == 14) {
+		cont2 = row14.length;
+		rowrow = row14;
+    }else if (row == 15) {
+		cont2 = row15.length;
+		rowrow = row15;
+    }else if (row == 16) {
+		cont2 = row16.length;
+		rowrow = row16;
+    }else if (row == 17) {
+		cont2 = row17.length;
+		rowrow = row17;
+    }else if (row == 18) {
+		cont2 = row18.length;
+		rowrow = row18;
+    }else if (row == 19) {
+		cont2 = row19.length;
+		rowrow = row19;
+    }else if (row == 20) {
+		cont2 = row20.length;
+		rowrow = row20;
+    }
+	while(rv1 < cont1) {
+	while(tv1 < cont2) {
+	tempv = psl[rv1] + "ppp" + rowrow[tv1];
+	nsl.push(tempv);
+	tv1++;
+	smm++;
+	}
+	rv1++;
+	}
+	psl = [];
+	psl = nsl;
+	nsl = [];
+	}
+	row++;
+	}
+	console.log(psl);
+}
+function tricksetter () {
+var element = document.getElementById("myElement");
+var closest = element.closest(".container");
+}
+</script>
+<div id="all">
+
+</div>
+
+</body>
+</html>
